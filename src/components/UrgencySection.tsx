@@ -30,28 +30,28 @@ const UrgencySection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-            ⚡ Oferta Limitada - Não Perca Esta Oportunidade
+            ⚡ Oferta Limitada - Aproveite Agora ou Perca a Oportunidade
           </h2>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
-            Por questões de qualidade, aceito apenas <strong>20 mapas por semana</strong>. 
-            E os primeiros 10 ganham um bônus especial!
+            Por questões de qualidade, aceito apenas <strong>12 mapas por semana</strong>. 
+            E os primeiros <strong>05 ganham um bônus especial!</strong>
           </p>
         </div>
         
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center">
             <Users className="h-12 w-12 mx-auto mb-4" />
-            <div className="text-2xl font-bold mb-2">20 Vagas</div>
+            <div className="text-2xl font-bold mb-2">12 Vagas</div>
             <p>Por semana disponíveis</p>
           </div>
           <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center">
             <Gift className="h-12 w-12 mx-auto mb-4" />
-            <div className="text-2xl font-bold mb-2">10 Primeiras</div>
-            <p>Ganham sessão de 30min GRÁTIS</p>
+            <div className="text-2xl font-bold mb-2">05 Primeiras</div>
+            <p>BÔNUS: video comentando seu Mapa</p>
           </div>
           <div className="bg-white bg-opacity-20 p-6 rounded-xl text-center">
             <Clock className="h-12 w-12 mx-auto mb-4" />
-            <div className="text-2xl font-bold mb-2">72h</div>
+            <div className="text-2xl font-bold mb-2">12h</div>
             <p>Tempo máximo de entrega</p>
           </div>
         </div>
@@ -76,7 +76,7 @@ const UrgencySection = () => {
           </div>
           
           <div className="bg-yellow-400 text-gray-900 p-4 rounded-xl inline-block font-bold text-lg">
-            🎁 BÔNUS: Mini-sessão de 30 minutos para esclarecer suas dúvidas sobre o mapa!
+            🎁 BÔNUS: Video comentando seu Mapa!
           </div>
         </div>
       </div>

@@ -11,55 +11,35 @@ const PricingSection = () => {
             Quanto Vale Conhecer <span className="text-purple-600">Seus Padrões</span>?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Uma sessão de terapia custa em média R$ 150. Seu mapa equivale a <strong>meses de autoconhecimento</strong>.
+            Uma sessão de terapia custa em média R$ 180. Seu Mapa equivale a <strong>meses de autoconhecimento</strong>.
           </p>
         </div>
         
-        <div className="bg-gradient-to-br from-purple-50 to-white border-2 border-purple-200 rounded-3xl p-6 sm:p-8 lg:p-12 text-center relative overflow-hidden max-w-3xl mx-auto">
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="bg-coral-500 text-white px-6 py-2 rounded-full font-bold text-sm">
-              OFERTA ESPECIAL
-            </div>
+        {/* NOVO CONTAINER OFERTA ESPECIAL */}
+        <div className="relative bg-white border-2 border-purple-200 rounded-3xl p-6 sm:p-8 lg:p-12 text-center shadow-xl max-w-3xl mx-auto overflow-visible">
+          {/* Imagem do celular flutuando, saindo do container */}
+          <div className="absolute left-1/2 -top-16 transform -translate-x-1/2 z-10 pointer-events-none">
+            <img
+              src="/mockup_mapa_phone.png"
+              alt="Mockup do celular"
+              className="w-40 sm:w-56 md:w-64 animate-float"
+              style={{ filter: 'drop-shadow(0 8px 24px rgba(80,0,120,0.10))' }}
+            />
           </div>
-          
-          <div className="mb-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
-              Mapa da Personalidade + Bônus
+          <div className="pt-24" />
+          <div className="mb-6">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">
+              Menos de <span className="font-bold text-purple-600">0,25 centavos</span> por dia para facilitar a entrada dos seus clientes
             </h3>
-            <div className="flex items-center justify-center space-x-4 mb-4">
-              <span className="text-2xl text-gray-500 line-through">De R$ 297</span>
-              <span className="text-5xl font-bold text-coral-500">R$ 97</span>
-            </div>
-            <p className="text-lg text-gray-600 mb-2">ou 3x de R$ 32,33</p>
-            <p className="text-sm text-purple-600 font-medium">Sem juros no cartão de crédito</p>
+            <div className="text-4xl font-extrabold text-coral-500 mb-1">6x16</div>
+            <div className="text-lg font-bold text-gray-700 mb-2">ou R$ 97,90 à vista!</div>
           </div>
-          
-          <div className="space-y-3 mb-8">
-            <div className="flex items-center justify-center space-x-3 text-gray-700">
-              <span className="text-green-500 text-xl">✓</span>
-              <span>Análise completa de personalidade e comportamento</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3 text-gray-700">
-              <span className="text-green-500 text-xl">✓</span>
-              <span>Mapeamento dos seus padrões sabotadores</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3 text-gray-700">
-              <span className="text-green-500 text-xl">✓</span>
-              <span>Estratégias personalizadas de transformação</span>
-            </div>
-            <div className="flex items-center justify-center space-x-3 text-coral-500 font-semibold">
-              <span className="text-yellow-500 text-xl">🎁</span>
-              <span>BÔNUS: Mini-sessão de 30min (primeiros 10)</span>
-            </div>
-          </div>
-          
-          <CTAButton 
-            text="GARANTIR MEU MAPA + BÔNUS"
+          <CTAButton
+            text="Quero Uma Anamnese Fácil"
             size="large"
-            className="mb-6"
+            className="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-4 text-lg font-bold shadow-lg mb-6 mx-auto"
           />
-          
-          <div className="grid md:grid-cols-3 gap-4 text-sm text-gray-600 pt-6 border-t border-gray-200">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm text-gray-600 pt-6 border-t border-gray-200 mt-4">
             <div className="flex items-center justify-center space-x-2">
               <Shield className="h-5 w-5 text-green-500" />
               <span>7 dias de garantia</span>
@@ -70,7 +50,7 @@ const PricingSection = () => {
             </div>
             <div className="flex items-center justify-center space-x-2">
               <Clock className="h-5 w-5 text-purple-500" />
-              <span>Entrega em 72h</span>
+              <span>Entrega em 12h</span>
             </div>
           </div>
         </div>
