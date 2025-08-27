@@ -6,36 +6,36 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Quanto tempo demora para receber meu mapa?",
-      answer: "Você receberá seu Mapa da Personalidade em até 72 horas úteis após o pagamento. Nossa terapeuta especializada precisa desse tempo para fazer uma análise profunda e personalizada das suas respostas."
+      question: "Quanto tempo demora para receber seu mapa?",
+      answer: "Você receberá seu Mapa da Personalidade em até 12 horas úteis após o pagamento(a média é de 6 horas). Precisamos desse tempo para fazer uma análise profunda e personalizada das suas respostas, depois disso criar o video comentado, empacotar tudo em PDF e enviar para você"
     },
     {
       question: "É realmente personalizado ou são respostas prontas?",
-      answer: "Cada mapa é 100% personalizado e único. Nossa terapeuta analisa individualmente suas respostas e cria estratégias específicas para seu perfil. Não usamos robôs ou respostas pré-definidas."
+      answer: "Cada mapa é 100% personalizado e único. Vou analisar individualmente seu caso, preparar as estratégias específicas para seu perfil comportamental e criar seu Mapa. Não são respostas pré-definidas."
     },
     {
       question: "E se eu não gostar do resultado?",
-      answer: "Oferecemos garantia incondicional de 7 dias. Se você não ficar completamente satisfeita, devolvemos 100% do seu dinheiro, sem perguntas ou burocracia."
+      answer: "Oferecemos uma garantia incostestável. Se você não ficar satisfeita(o) ou se entender que o Mapa não representa suas características comportamentais, devolvemos 100% do seu dinheiro."
     },
     {
       question: "Funciona para qualquer idade?",
-      answer: "Sim! Nosso método é eficaz para mulheres de qualquer idade. Os padrões comportamentais podem ser identificados e transformados em qualquer fase da vida."
+      answer: "Sim! Nosso método é eficaz para pessoas de qualquer idade. Os padrões comportamentais podem ser identificados e transformados em qualquer fase da vida. Basta saber onde e como agir"
     },
     {
       question: "Como é feito o pagamento?",
-      answer: "Aceitamos cartão de crédito (até 3x sem juros), PIX e boleto bancário. Todo o processo é seguro e protegido por criptografia SSL."
+      answer: "Aceitamos cartão de crédito (até 3x sem juros), PIX e boleto bancário. Todo o processo é seguro e protegido por criptografia SSL usamos os melhores meios de pagamentos online."
     },
     {
-      question: "Substitui acompanhamento psicológico?",
-      answer: "O mapa é uma ferramenta complementar de autoconhecimento, não substitui terapia psicológica. Pode ser usado junto com acompanhamento profissional para potencializar resultados."
+      question: "Substitui acompanhamento psicológico/pscicoterapias?",
+      answer: "O mapa é uma poderosa ferramenta complementar de autoconhecimento, vai te mostrar onde e como melhorar. Não substitui terapias e pode ser usado junto com acompanhamento profissional para potencializar resultados."
     },
     {
       question: "Posso compartilhar meu mapa com outras pessoas?",
-      answer: "O mapa é seu e você pode compartilhar com quem quiser. Muitas mulheres compartilham insights com parceiros, familiares ou terapeutas para aprofundar o processo de transformação."
+      answer: "O mapa é seu e você pode compartilhar com quem quiser. Muitas mulheres encantadas com a assertividade compartilham insights com amigas, parceiros, familiares e terapeutas para se aprofundar no processo de transformação."
     },
     {
-      question: "O que está incluído no bônus das primeiras 10?",
-      answer: "As primeiras 10 pessoas ganham uma mini-sessão de 30 minutos via videochamada com nossa terapeuta para esclarecer dúvidas e aprofundar insights do seu mapa."
+      question: "O que está incluído no bônus das primeiras 5?",
+      answer: "As primeiras 5 pessoas ganham uma mini-sessão com video gravado comigo comentando SEU MAPA para esclarecer dúvidas e aprofundar insights do seu caso."
     }
   ];
 
@@ -78,20 +78,6 @@ const FAQSection = () => {
           ))}
         </div>
         
-        <div className="mt-12 text-center">
-          <div className="bg-purple-50 border border-purple-200 rounded-xl p-6">
-            <h3 className="font-bold text-purple-900 mb-2">Ainda tem dúvidas?</h3>
-            <p className="text-purple-700 mb-4">
-              Nossa equipe está disponível para esclarecer qualquer questão
-            </p>
-            <a 
-              href="https://wa.me/5511999999999" 
-              className="inline-flex items-center px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition-colors"
-            >
-              💬 Falar no WhatsApp
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );

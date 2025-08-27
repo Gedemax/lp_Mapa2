@@ -1,4 +1,5 @@
 import React from 'react';
+import CTAButton from './ui/CTAButton';
 import { Map, Users, Brain, Target } from 'lucide-react';
 
 const WhatIsMapSection = () => {
@@ -42,7 +43,7 @@ const WhatIsMapSection = () => {
           <div>
             <img 
               src="/mockup_mapa.png"
-              alt="Processo de análise personalizada"
+              alt="Mockup do Mapa da Personalidade"
               className="rounded-2xl shadow-lg w-full h-96 object-cover"
             />
           </div>
@@ -91,8 +92,14 @@ const WhatIsMapSection = () => {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+          {/* CTA entre Caminhos Ideais e Oneida Fernanda */}
+          <div className="flex justify-center items-center mt-20 mb-12">
+  <a href="#pricing">
+    <CTAButton text="Quero Meu Mapa Agora" size="large" className="px-10" />
+  </a>
+</div>
+        </div>
+      </section>
   );
 };
 

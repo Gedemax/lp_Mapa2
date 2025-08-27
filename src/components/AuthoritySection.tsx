@@ -12,7 +12,7 @@ const AuthoritySection = () => {
     {
       name: "Carolina Lima",
       role: "Designer",
-      content: "Mudei de carreira depois do mapa. Descobri que eu estava tentando ser quem eu não era. Hoje trabalho com o que amo e sou muito mais feliz.",
+      content: "Mulher, que mapa maravilhoso... Meu Deus, tudo isso fez muito, muito sentido, de verdade.… é como se cada palavra do Mapa falasse direto com a minha alma. Vou guardar com carinho — foi transformador.",
       rating: 5
     },
     {
@@ -49,10 +49,10 @@ const AuthoritySection = () => {
             </div>
           </div>
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-              Quem Criou Sua <span className="text-purple-600">Transformação</span>?
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6 text-left">
+              Quem Cria Sua <span className="text-purple-600">Transformação</span>?
             </h2>
-            <p className="text-lg text-gray-600 mb-6">
+            <p className="text-lg text-gray-600 mb-6 text-left">
               "Minha missão é guiar mulheres na libertação da insegurança e da indecisão, apoiá-las na cura de traumas e na transformação de crenças limitantes, para que possam ressignificar sua história, despertar sua força interior e viver com equilíbrio, clareza e abundância
             </p>
             {/*

@@ -4,8 +4,31 @@ import CTAButton from './ui/CTAButton';
 
 const FinalCallSection = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-purple-600 via-purple-700 to-coral-600 text-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <>
+      {/* Foto da terapeuta próxima à seção lilás */}
+      <div className="relative -mb-8 z-10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+          <div className="relative">
+            <img 
+              src="/mapa_img_terapeuta.png"
+              alt="Oneida Fernanda - Terapeuta"
+              className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white"
+            />
+            <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-3 shadow-lg">
+              <div className="flex items-center space-x-2">
+                <Heart className="h-5 w-5 text-purple-600" />
+                <div className="text-sm">
+                  <div className="font-bold text-gray-900">+846 mulheres</div>
+                  <div className="text-xs text-gray-600">transformadas</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <section className="py-16 bg-gradient-to-br from-purple-600 via-purple-700 to-coral-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12">
         <Heart className="h-16 w-16 mx-auto mb-6 opacity-80" />
         
         <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -31,7 +54,7 @@ const FinalCallSection = () => {
         
         <div className="mb-8">
           <CTAButton 
-            text="SIM, QUERO MEU MAPA + BÔNUS AGORA"
+            text="SIM, QUERO MEU MAPA +BÔNUS AGORA"
             icon={<ArrowRight className="h-5 w-5" />}
             size="large"
             className="bg-coral-500 hover:bg-coral-600 text-white shadow-2xl"
@@ -39,17 +62,18 @@ const FinalCallSection = () => {
         </div>
         
         <p className="text-sm opacity-75">
-          ⏰ Restam poucas vagas esta semana | 🎁 Bônus apenas para os primeiros 10 | 🛡️ 7 dias de garantia
+          ⏰ Restam poucas vagas esta semana | 🎁 Bônus apenas para os 5 primeiros | 🛡️ Garantia Incontestável
         </p>
         
         <div className="mt-12 border-t border-white border-opacity-20 pt-8">
           <p className="text-lg italic opacity-90">
             "O dia em que você decide se conhecer profundamente é o dia em que sua vida real começa."
           </p>
-          <p className="mt-2 text-sm opacity-75">- Dra. Patricia Mendes</p>
+          <p className="mt-2 text-sm opacity-75">- Ter. Oneida Fernanda</p>
         </div>
       </div>
     </section>
+    </>
   );
 };
 

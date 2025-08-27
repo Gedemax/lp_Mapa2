@@ -3,9 +3,9 @@ import { Clock, Users, Gift } from 'lucide-react';
 
 const UrgencySection = () => {
   const [timeLeft, setTimeLeft] = useState({
-    hours: 47,
-    minutes: 23,
-    seconds: 45
+    hours: 2,
+    minutes: 15,
+    seconds: 0
   });
 
   useEffect(() => {

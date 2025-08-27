@@ -29,8 +29,8 @@ const BenefitsSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <img 
-              src="https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Mulher descobrindo autoconhecimento"
+              src="/sessao_descobrir.jpeg"
+              alt="Sessão Descobrir"
               className="rounded-2xl shadow-lg w-full h-96 object-cover"
             />
           </div>

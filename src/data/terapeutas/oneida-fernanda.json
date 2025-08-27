@@ -1,0 +1,90 @@
+{
+  "slug": "oneida-fernanda",
+  "nome": "Oneida Fernanda",
+  "titulo": "Ter. Oneida Fernanda",
+  "foto": "/mapa_img_terapeuta.png",
+  "fotoPerfil": "/foto_perfil.jpg",
+  "estatisticas": {
+    "mulheresTransformadas": 846,
+    "anosExperiencia": 8,
+    "avaliacaoMedia": 4.9
+  },
+  "hero": {
+    "titulo": "Descubra Quem Você Realmente É",
+    "subtitulo": "Através do Seu Mapa da Personalidade Único",
+    "descricao": "Um relatório completo e personalizado que revela seus padrões comportamentais mais profundos, seus pontos de força ocultos e o caminho exato para sua transformação pessoal.",
+    "preco": {
+      "original": 197,
+      "promocional": 97,
+      "desconto": 50
+    }
+  },
+  "autoridade": {
+    "titulo": "Quem é Oneida Fernanda?",
+    "descricao": "Terapeuta especializada em análise comportamental com mais de 8 anos ajudando mulheres a descobrirem seu verdadeiro potencial através do autoconhecimento profundo.",
+    "credenciais": [
+      "Formada em Psicologia pela USP",
+      "Especialista em Terapia Cognitivo-Comportamental",
+      "Certificada em Análise de Personalidade",
+      "Mais de 846 mulheres transformadas"
+    ]
+  },
+  "beneficios": {
+    "titulo": "O Que Você Vai Descobrir?",
+    "lista": [
+      {
+        "titulo": "Seus Padrões Comportamentais",
+        "descricao": "Entenda por que você age de determinada forma em situações específicas"
+      },
+      {
+        "titulo": "Pontos de Força Ocultos",
+        "descricao": "Descubra talentos e habilidades que você nem sabia que tinha"
+      },
+      {
+        "titulo": "Gatilhos Emocionais",
+        "descricao": "Identifique o que desperta suas reações mais intensas"
+      },
+      {
+        "titulo": "Estratégias Personalizadas",
+        "descricao": "Receba um plano de ação específico para seu perfil"
+      }
+    ]
+  },
+  "depoimentos": [
+    {
+      "nome": "Maria Silva",
+      "idade": 34,
+      "profissao": "Empresária",
+      "texto": "O mapa mudou completamente minha forma de me relacionar. Finalmente entendi por que sempre sabotava meus relacionamentos.",
+      "foto": "/depoimento1.jpg"
+    },
+    {
+      "nome": "Ana Costa",
+      "idade": 28,
+      "profissao": "Designer",
+      "texto": "Descobri que minha ansiedade tinha padrões específicos. Agora sei como lidar com ela de forma muito mais eficaz.",
+      "foto": "/depoimento2.jpg"
+    }
+  ],
+  "garantia": {
+    "tipo": "Garantia Incontestável",
+    "descricao": "Se você não ficar satisfeita com seu mapa, devolvemos 100% do seu dinheiro."
+  },
+  "bonus": {
+    "titulo": "Bônus Exclusivo",
+    "descricao": "Mini-sessão gravada comentando SEU MAPA",
+    "limitePessoas": 5
+  },
+  "contato": {
+    "whatsapp": "5511999999999",
+    "email": "oneida@souterapeuta.pro",
+    "instagram": "@oneidafernanda",
+    "youtube": "@oneidafernandaterapeuta"
+  },
+  "redesSociais": {
+    "instagram": "https://instagram.com/oneidafernanda",
+    "whatsapp": "https://wa.me/5511999999999",
+    "youtube": "https://youtube.com/@oneidafernandaterapeuta",
+    "telegram": "https://t.me/oneidafernanda"
+  }
+}

@@ -18,24 +18,24 @@ const PricingSection = () => {
         {/* NOVO CONTAINER OFERTA ESPECIAL */}
         <div className="relative bg-white border-2 border-purple-200 rounded-3xl p-6 sm:p-8 lg:p-12 text-center shadow-xl max-w-3xl mx-auto overflow-visible">
           {/* Imagem do celular flutuando, saindo do container */}
-          <div className="absolute left-1/2 -top-16 transform -translate-x-1/2 z-10 pointer-events-none">
-            <img
-              src="/mockup_mapa_phone.png"
-              alt="Mockup do celular"
-              className="w-40 sm:w-56 md:w-64 animate-float"
-              style={{ filter: 'drop-shadow(0 8px 24px rgba(80,0,120,0.10))' }}
-            />
-          </div>
-          <div className="pt-24" />
+          <div className="absolute left-1/2 -top-28 sm:-top-32 md:-top-36 transform -translate-x-1/2 z-10 pointer-events-none">
+  <img
+    src="/mockup_mapa_phone.png"
+    alt="Mockup do celular"
+    className="w-56 sm:w-72 md:w-96 animate-horizontal-float"
+    style={{ filter: 'drop-shadow(0 8px 24px rgba(80,0,120,0.10))' }}
+  />
+</div>
+<div className="pt-40 sm:pt-44 md:pt-48" />
           <div className="mb-6">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Menos de <span className="font-bold text-purple-600">0,25 centavos</span> por dia para facilitar a entrada dos seus clientes
+              Menos de <span className="font-bold text-purple-600">0,16 centavos</span> por dia para descobrir como quebrar o ciclo para sempre!
             </h3>
-            <div className="text-4xl font-extrabold text-coral-500 mb-1">6x16</div>
-            <div className="text-lg font-bold text-gray-700 mb-2">ou R$ 97,90 à vista!</div>
+            <div className="text-4xl font-extrabold text-coral-500 mb-1">3 x R$17</div>
+            <div className="text-lg font-bold text-gray-700 mb-2">ou R$47,90 no PIX</div>
           </div>
           <CTAButton
-            text="Quero Uma Anamnese Fácil"
+            text="Quero Meu Mapa Agora"
             size="large"
             className="bg-green-500 hover:bg-green-600 text-white rounded-full px-8 py-4 text-lg font-bold shadow-lg mb-6 mx-auto"
           />
@@ -55,7 +55,7 @@ const PricingSection = () => {
           </div>
         </div>
         
-        <div className="mt-8 text-center max-w-2xl mx-auto">
+        {/* <div className="mt-8 text-center max-w-2xl mx-auto">
           <div className="bg-green-50 border border-green-200 rounded-xl p-6">
             <h4 className="font-bold text-green-800 mb-2">🛡️ Garantia Incondicional de 7 Dias</h4>
             <p className="text-green-700">
@@ -63,7 +63,7 @@ const PricingSection = () => {
               devolvemos todo o seu dinheiro. Sem perguntas, sem burocracia.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

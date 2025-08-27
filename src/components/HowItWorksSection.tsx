@@ -7,8 +7,8 @@ const HowItWorksSection = () => {
       step: 1,
       icon: <MessageSquare className="h-8 w-8" />,
       title: "Responda",
-      subtitle: "7 perguntas estratégicas",
-      description: "Perguntas cuidadosamente elaboradas para revelar seus padrões mais profundos",
+      subtitle: "Questionário breve",
+      description: "Poucas perguntas cuidadosamente elaboradas que vão revelar os padrões mais profundos",
       color: "bg-blue-500"
     },
     {
@@ -66,10 +66,10 @@ const HowItWorksSection = () => {
         
         <div className="mt-16 bg-gradient-to-r from-purple-50 to-coral-50 rounded-2xl p-8 text-center">
           <h3 className="text-xl font-bold text-gray-900 mb-4">
-            💝 Tempo Médio de Entrega: 72 horas
+            💝 Tempo Médio de Entrega: 06 horas
           </h3>
           <p className="text-gray-600">
-            Você receberá seu mapa completo por email, pronto para transformar sua vida
+            Você receberá seu mapa em um PDF completo, no seu whatsapp, e um vídeo comentando ponto a ponto, e pronto para transformar sua vida.
           </p>
         </div>
       </div>

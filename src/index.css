@@ -59,6 +59,14 @@
   animation: float 3s ease-in-out infinite;
 }
 
+@keyframes horizontal-float {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(16px); }
+}
+.animate-horizontal-float {
+  animation: horizontal-float 3.45s ease-in-out infinite;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
