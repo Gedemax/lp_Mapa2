@@ -1,8 +1,11 @@
 import React from 'react';
 import { ArrowRight, Sparkles, Heart } from 'lucide-react';
 import CTAButton from './ui/CTAButton';
+import { useTherapist } from './TherapistProvider';
 
 const HeroSection = () => {
+  const { therapistData } = useTherapist();
+  
   return (
     <section className="relative bg-gradient-to-br from-purple-50 via-white to-coral-50 py-16 lg:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -69,7 +72,7 @@ const HeroSection = () => {
                     <Heart className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-gray-900">+846 mulheres</p>
+                    <p className="text-sm font-semibold text-gray-900">+{therapistData?.stats.clientsTransformed || 846} mulheres</p>
                     <p className="text-xs text-gray-500">transformadas</p>
                   </div>
                 </div>

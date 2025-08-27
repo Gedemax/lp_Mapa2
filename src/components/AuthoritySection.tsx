@@ -1,8 +1,12 @@
 import React from 'react';
 import { Star, Users, Award } from 'lucide-react';
+import { useTherapist } from './TherapistProvider';
 
 const AuthoritySection = () => {
-  const testimonials = [
+  const { therapistData } = useTherapist();
+  
+  // Fallback para dados estáticos se não houver dados dinâmicos
+  const testimonials = therapistData?.testimonials || [
     {
       name: "Marina Santos",
       role: "Empresária",
@@ -31,20 +35,27 @@ const AuthoritySection = () => {
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <div className="flex items-center space-x-4 mb-6">
                 <img 
-                  src="/foto_perfil.jpg"
-                  alt="Dra. Patricia Mendes"
+                  src={therapistData?.images.profile || "/foto_perfil.jpg"}
+                  alt={therapistData?.name || "Terapeuta"}
                   className="w-20 h-20 rounded-full object-cover"
                 />
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">Oneida Fernanda</h3>
-                  <p className="text-purple-600 font-medium">Terapeuta Emocional Sistêmica</p>
+                  <h3 className="text-xl font-bold text-gray-900">{therapistData?.name || "Oneida Fernanda"}</h3>
+                  <p className="text-purple-600 font-medium">{therapistData?.title || "Terapeuta Emocional Sistêmica"}</p>
                 </div>
               </div>
               <div className="space-y-3 text-sm text-gray-600">
-                <p>✓ Especialista em Padrões Comportamentais</p>
-                <p>✓ Terapia de Reprocessamento Generativo</p>
-                <p>✓ Reconhecimento MEC CITRG 02-176</p>
-                <p>✓ Psicoteologia de aconselhamento</p>
+                {therapistData?.specialties ? 
+                  therapistData.specialties.map((specialty, index) => (
+                    <p key={index}>✓ {specialty}</p>
+                  )) : 
+                  <>
+                    <p>✓ Especialista em Padrões Comportamentais</p>
+                    <p>✓ Terapia de Reprocessamento Generativo</p>
+                    <p>✓ Reconhecimento MEC CITRG 02-176</p>
+                    <p>✓ Psicoteologia de aconselhamento</p>
+                  </>
+                }
               </div>
             </div>
           </div>
@@ -53,7 +64,7 @@ const AuthoritySection = () => {
               Quem Cria Sua <span className="text-purple-600">Transformação</span>?
             </h2>
             <p className="text-lg text-gray-600 mb-6 text-left">
-              "Minha missão é guiar mulheres na libertação da insegurança e da indecisão, apoiá-las na cura de traumas e na transformação de crenças limitantes, para que possam ressignificar sua história, despertar sua força interior e viver com equilíbrio, clareza e abundância
+              "{therapistData?.bio || "Minha missão é guiar mulheres na libertação da insegurança e da indecisão, apoiá-las na cura de traumas e na transformação de crenças limitantes, para que possam ressignificar sua história, despertar sua força interior e viver com equilíbrio, clareza e abundância"}"
             </p>
             {/*
             <div className="flex items-center space-x-6">

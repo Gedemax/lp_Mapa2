@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -17,21 +21,36 @@ export default {
           900: '#4c1d95',
         },
         coral: {
-          50: '#fff1f1',
-          100: '#ffe1e1',
-          200: '#ffc9c9',
-          300: '#ffa3a3',
-          400: '#ff6d6d',
-          500: '#FF6B6B',
-          600: '#f43f5e',
-          700: '#e11d48',
-          800: '#be123c',
-          900: '#9f1239',
+          50: '#fef7f0',
+          100: '#fdeee1',
+          200: '#fad9c2',
+          300: '#f7c199',
+          400: '#f3a06e',
+          500: '#ef7f44',
+          600: '#e06530',
+          700: '#ba4e26',
+          800: '#944025',
+          900: '#773622',
         },
       },
       fontFamily: {
         'poppins': ['Poppins', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
+      },
+      animation: {
+        'bounce-slow': 'bounce 3s infinite',
+        'float': 'float 6s ease-in-out infinite',
+        'float-horizontal': 'float-horizontal 4s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'float-horizontal': {
+          '0%, 100%': { transform: 'translateX(0px)' },
+          '50%': { transform: 'translateX(8px)' },
+        }
       },
     },
   },

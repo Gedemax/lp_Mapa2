@@ -1,8 +1,11 @@
 import React from 'react';
 import { Heart, ArrowRight } from 'lucide-react';
 import CTAButton from './ui/CTAButton';
+import { useTherapist } from './TherapistProvider';
 
 const FinalCallSection = () => {
+  const { therapistData } = useTherapist();
+  
   return (
     <>
       {/* Foto da terapeuta próxima à seção lilás */}
@@ -10,15 +13,15 @@ const FinalCallSection = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
           <div className="relative">
             <img 
-              src="/mapa_img_terapeuta.png"
-              alt="Oneida Fernanda - Terapeuta"
+              src={therapistData?.images.hero || "/mapa_img_terapeuta.png"}
+              alt={`${therapistData?.name || "Oneida Fernanda"} - Terapeuta`}
               className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white"
             />
             <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-3 shadow-lg">
               <div className="flex items-center space-x-2">
                 <Heart className="h-5 w-5 text-purple-600" />
                 <div className="text-sm">
-                  <div className="font-bold text-gray-900">+846 mulheres</div>
+                  <div className="font-bold text-gray-900">+{therapistData?.stats.clientsTransformed || 846} mulheres</div>
                   <div className="text-xs text-gray-600">transformadas</div>
                 </div>
               </div>
@@ -67,9 +70,9 @@ const FinalCallSection = () => {
         
         <div className="mt-12 border-t border-white border-opacity-20 pt-8">
           <p className="text-lg italic opacity-90">
-            "O dia em que você decide se conhecer profundamente é o dia em que sua vida real começa."
+            "{therapistData?.quote.text || "O dia em que você decide se conhecer profundamente é o dia em que sua vida real começa."}"
           </p>
-          <p className="mt-2 text-sm opacity-75">- Ter. Oneida Fernanda</p>
+          <p className="mt-2 text-sm opacity-75">- {therapistData?.quote.author || "Ter. Oneida Fernanda"}</p>
         </div>
       </div>
     </section>

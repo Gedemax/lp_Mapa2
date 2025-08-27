@@ -1,90 +1,65 @@
 {
   "slug": "oneida-fernanda",
-  "nome": "Oneida Fernanda",
-  "titulo": "Ter. Oneida Fernanda",
-  "foto": "/mapa_img_terapeuta.png",
-  "fotoPerfil": "/foto_perfil.jpg",
-  "estatisticas": {
-    "mulheresTransformadas": 846,
-    "anosExperiencia": 8,
-    "avaliacaoMedia": 4.9
+  "name": "Oneida Fernanda",
+  "title": "Terapeuta Emocional Sistêmica",
+  "bio": "Minha missão é guiar mulheres na libertação da insegurança e da indecisão, apoiá-las na cura de traumas e na transformação de crenças limitantes, para que possam ressignificar sua história, despertar sua força interior e viver com equilíbrio, clareza e abundância",
+  "stats": {
+    "clientsTransformed": 846,
+    "yearsExperience": 8
   },
-  "hero": {
-    "titulo": "Descubra Quem Você Realmente É",
-    "subtitulo": "Através do Seu Mapa da Personalidade Único",
-    "descricao": "Um relatório completo e personalizado que revela seus padrões comportamentais mais profundos, seus pontos de força ocultos e o caminho exato para sua transformação pessoal.",
-    "preco": {
-      "original": 197,
-      "promocional": 97,
-      "desconto": 50
-    }
-  },
-  "autoridade": {
-    "titulo": "Quem é Oneida Fernanda?",
-    "descricao": "Terapeuta especializada em análise comportamental com mais de 8 anos ajudando mulheres a descobrirem seu verdadeiro potencial através do autoconhecimento profundo.",
-    "credenciais": [
-      "Formada em Psicologia pela USP",
-      "Especialista em Terapia Cognitivo-Comportamental",
-      "Certificada em Análise de Personalidade",
-      "Mais de 846 mulheres transformadas"
-    ]
-  },
-  "beneficios": {
-    "titulo": "O Que Você Vai Descobrir?",
-    "lista": [
-      {
-        "titulo": "Seus Padrões Comportamentais",
-        "descricao": "Entenda por que você age de determinada forma em situações específicas"
-      },
-      {
-        "titulo": "Pontos de Força Ocultos",
-        "descricao": "Descubra talentos e habilidades que você nem sabia que tinha"
-      },
-      {
-        "titulo": "Gatilhos Emocionais",
-        "descricao": "Identifique o que desperta suas reações mais intensas"
-      },
-      {
-        "titulo": "Estratégias Personalizadas",
-        "descricao": "Receba um plano de ação específico para seu perfil"
-      }
-    ]
-  },
-  "depoimentos": [
-    {
-      "nome": "Maria Silva",
-      "idade": 34,
-      "profissao": "Empresária",
-      "texto": "O mapa mudou completamente minha forma de me relacionar. Finalmente entendi por que sempre sabotava meus relacionamentos.",
-      "foto": "/depoimento1.jpg"
-    },
-    {
-      "nome": "Ana Costa",
-      "idade": 28,
-      "profissao": "Designer",
-      "texto": "Descobri que minha ansiedade tinha padrões específicos. Agora sei como lidar com ela de forma muito mais eficaz.",
-      "foto": "/depoimento2.jpg"
-    }
+  "specialties": [
+    "Especialista em Padrões Comportamentais",
+    "Terapia de Reprocessamento Generativo",
+    "Reconhecimento MEC CITRG 02-176",
+    "Psicoteologia de aconselhamento"
   ],
-  "garantia": {
-    "tipo": "Garantia Incontestável",
-    "descricao": "Se você não ficar satisfeita com seu mapa, devolvemos 100% do seu dinheiro."
-  },
-  "bonus": {
-    "titulo": "Bônus Exclusivo",
-    "descricao": "Mini-sessão gravada comentando SEU MAPA",
-    "limitePessoas": 5
-  },
-  "contato": {
-    "whatsapp": "5511999999999",
-    "email": "oneida@souterapeuta.pro",
-    "instagram": "@oneidafernanda",
-    "youtube": "@oneidafernandaterapeuta"
-  },
-  "redesSociais": {
+  "socialLinks": {
     "instagram": "https://instagram.com/oneidafernanda",
     "whatsapp": "https://wa.me/5511999999999",
-    "youtube": "https://youtube.com/@oneidafernandaterapeuta",
+    "youtube": "https://youtube.com/@oneidafernanda",
     "telegram": "https://t.me/oneidafernanda"
+  },
+  "images": {
+    "profile": "/foto_perfil.jpg",
+    "hero": "/mapa_img_terapeuta.png",
+    "mockup": "/mockup_mapa.png"
+  },
+  "videoUrl": "https://www.youtube.com/embed/VIDEO_ID_ONEIDA",
+  "checkoutUrl": "https://checkout.souterapeuta.pro/oneida-fernanda/mapa-personalidade",
+  "quote": {
+    "text": "O dia em que você decide se conhecer profundamente é o dia em que sua vida real começa.",
+    "author": "Ter. Oneida Fernanda"
+  },
+  "testimonials": [
+    {
+      "name": "Marina Santos",
+      "role": "Empresária",
+      "content": "Finalmente entendi por que eu sempre escolhia os parceiros errados. O mapa me abriu os olhos para padrões que eu repetia há 15 anos!",
+      "rating": 5
+    },
+    {
+      "name": "Carolina Lima",
+      "role": "Designer",
+      "content": "Mulher, que mapa maravilhoso... Meu Deus, tudo isso fez muito, muito sentido, de verdade.… é como se cada palavra do Mapa falasse direto com a minha alma. Vou guardar com carinho — foi transformador.",
+      "rating": 5
+    },
+    {
+      "name": "Ana Rodrigues",
+      "role": "Psicóloga",
+      "content": "Mesmo sendo da área, o mapa me trouxe insights que nunca havia considerado. Recomendo para todas as minhas pacientes.",
+      "rating": 5
+    }
+  ],
+  "pricing": {
+    "originalPrice": 297,
+    "currentPrice": 97,
+    "currency": "BRL",
+    "guarantee": "Garantia Incontestável",
+    "bonusText": "Bônus apenas para os 5 primeiros"
+  },
+  "seo": {
+    "title": "Mapa da Personalidade - Oneida Fernanda | Terapeuta Emocional",
+    "description": "Descubra seus padrões comportamentais com a Terapeuta Oneida Fernanda. Análise personalizada que transforma vidas através do autoconhecimento profundo.",
+    "keywords": "mapa personalidade, oneida fernanda, terapeuta emocional, autoconhecimento, padrões comportamentais"
   }
 }

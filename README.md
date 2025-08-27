@@ -1,50 +1,118 @@
-# Mapa da Personalidade - Landing Page
+# 🚀 Mapa da Personalidade - Multi Terapeutas
 
-Landing page dinâmica para múltiplas terapeutas especializadas em análise comportamental.
+Sistema dinâmico de Landing Pages para múltiplas terapeutas usando Next.js e TypeScript.
 
-## 🚀 Estrutura do Projeto
-
-- **Dados Dinâmicos**: Cada terapeuta tem seu próprio arquivo JSON em `/src/data/terapeutas/`
-- **Roteamento**: URLs amigáveis como `/oneida-fernanda`
-- **Responsivo**: Design otimizado para desktop e mobile
-- **Deploy**: Configurado para Vercel com domínio personalizado
-
-## 📁 Estrutura de Arquivos
+## 📋 Estrutura do Projeto
 
 ```
-src/
-├── components/          # Componentes React
-├── data/
-│   └── terapeutas/     # Dados específicos de cada terapeuta
-│       └── oneida-fernanda.json
-├── hooks/              # Custom hooks
-│   └── useTerapeutaData.ts
-└── ...
+├── pages/
+│   └── [slug].tsx          # Roteamento dinâmico para terapeutas
+├── src/
+│   ├── components/         # Componentes React
+│   ├── data/
+│   │   └── terapeutas/     # Dados JSON de cada terapeuta
+│   ├── hooks/              # Hooks customizados
+│   └── types/              # TypeScript interfaces
+└── public/                 # Assets estáticos
 ```
 
-## 🛠️ Como Adicionar Nova Terapeuta
+## 🛠️ Instalação
 
-1. Crie um novo arquivo JSON em `/src/data/terapeutas/nome-terapeuta.json`
-2. Copie a estrutura do arquivo `oneida-fernanda.json`
-3. Atualize os dados específicos da nova terapeuta
-4. A URL será automaticamente `/nome-terapeuta`
-
-## 🌐 Deploy
-
-- **Plataforma**: Vercel
-- **Domínio**: mapa.souterapeuta.pro
-- **DNS**: Gerenciado pela Cloudflare
-
-## 📱 URLs Disponíveis
-
-- `/oneida-fernanda` - Landing page da Oneida Fernanda
-- `/` - Redireciona para `/oneida-fernanda`
-
-## 🔧 Comandos
-
+1. **Clone o repositório**
 ```bash
-npm install     # Instalar dependências
-npm run dev     # Servidor de desenvolvimento
-npm run build   # Build para produção
-npm run preview # Preview do build
+git clone <repository-url>
+cd LP-MAPA-2
 ```
+
+2. **Instale as dependências**
+```bash
+npm install
+```
+
+3. **Execute em desenvolvimento**
+```bash
+npm run dev
+```
+
+4. **Build para produção**
+```bash
+npm run build
+npm run start
+```
+
+## 🌐 Como Adicionar Nova Terapeuta
+
+1. **Crie arquivo JSON** em `src/data/terapeutas/[slug].json`:
+```json
+{
+  "slug": "nome-terapeuta",
+  "name": "Nome da Terapeuta",
+  "title": "Especialidade",
+  "bio": "Biografia...",
+  "stats": {
+    "clientsTransformed": 500,
+    "yearsExperience": 5
+  },
+  "socialLinks": {
+    "instagram": "https://instagram.com/...",
+    "whatsapp": "https://wa.me/...",
+    "youtube": "https://youtube.com/...",
+    "telegram": "https://t.me/..."
+  },
+  "videoUrl": "https://youtube.com/embed/...",
+  "checkoutUrl": "https://checkout.com/...",
+  "quote": {
+    "text": "Frase inspiradora",
+    "author": "Nome da Terapeuta"
+  }
+}
+```
+
+2. **Adicione o slug** em `pages/[slug].tsx` no array `getStaticPaths`:
+```typescript
+const therapists = ['oneida-fernanda', 'nova-terapeuta'];
+```
+
+3. **Adicione assets** em `public/therapists/[slug]/`:
+- `profile.jpg` - Foto de perfil
+- `hero.png` - Imagem principal
+
+## 🚀 Deploy na Vercel
+
+1. **Conecte repositório** na Vercel
+2. **Configure domínio** em Vercel Dashboard
+3. **Configure DNS** no Cloudflare:
+   - Tipo: CNAME
+   - Nome: mapa
+   - Destino: vercel-deployment-url
+
+## 📱 URLs Finais
+
+- `mapa.souterapeuta.pro/oneida-fernanda`
+- `mapa.souterapeuta.pro/nova-terapeuta`
+
+## 🔧 Configurações Importantes
+
+- **SEO**: Cada terapeuta tem meta tags personalizadas
+- **Performance**: Imagens otimizadas e lazy loading
+- **Responsivo**: Design mobile-first
+- **TypeScript**: Tipagem completa para segurança
+
+## 📊 Dados Dinâmicos Suportados
+
+- ✅ Nome e título da terapeuta
+- ✅ Biografia e especialidades
+- ✅ Estatísticas (clientes transformadas)
+- ✅ Links de redes sociais
+- ✅ URL do vídeo (YouTube embed)
+- ✅ Link do checkout
+- ✅ Citação personalizada
+- ✅ Depoimentos/testimonials
+- ✅ Preços e garantias
+
+## 🛡️ Segurança
+
+- Validação TypeScript
+- Sanitização de dados
+- Links seguros (noopener noreferrer)
+- Fallbacks para dados ausentes
