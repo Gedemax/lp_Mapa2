@@ -6,16 +6,7 @@ const nextConfig = {
     domains: ['images.pexels.com'],
     unoptimized: true
   },
-  trailingSlash: true,
-  output: 'export',
-  distDir: 'out',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '' : '',
-  // Configuração para roteamento dinâmico
-  generateStaticParams: async () => {
-    return [
-      { slug: 'oneida-fernanda' }
-    ];
-  }
+  trailingSlash: true
 };
 
 module.exports = nextConfig;

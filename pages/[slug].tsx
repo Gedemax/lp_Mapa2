@@ -1,5 +1,7 @@
 import React from 'react';
 import { GetStaticProps, GetStaticPaths } from 'next';
+import fs from 'fs';
+import path from 'path';
 import Head from 'next/head';
 import { TherapistData } from '../src/types/therapist';
 import { TherapistProvider } from '../src/components/TherapistProvider';
@@ -59,10 +61,14 @@ const TherapistPage: React.FC<TherapistPageProps> = ({ therapistData }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Lista de terapeutas disponíveis
-  const therapists = ['oneida-fernanda'];
+  // Lê automaticamente todos os arquivos JSON da pasta terapeutas
+  const therapistsDir = path.join(process.cwd(), 'src/data/terapeutas');
+  const files = fs.readdirSync(therapistsDir);
+  const therapists = files
+    .filter((file: string) => file.endsWith('.json'))
+    .map((file: string) => file.replace('.json', ''));
   
-  const paths = therapists.map((slug) => ({
+  const paths = therapists.map((slug: string) => ({
     params: { slug },
   }));
 
