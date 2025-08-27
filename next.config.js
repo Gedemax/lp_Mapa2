@@ -6,7 +6,9 @@ const nextConfig = {
     domains: ['images.pexels.com'],
     unoptimized: true
   },
-  trailingSlash: true
+  trailingSlash: true,
+  output: 'export',
+  distDir: 'out'
 };
 
 module.exports = nextConfig;
