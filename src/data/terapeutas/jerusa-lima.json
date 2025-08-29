@@ -1,0 +1,65 @@
+{
+  "slug": "jerusa-lima",
+  "name": "Jerusa Lima",
+  "title": "Psicoterapeuta Emocional",
+  "bio": "Especialista em transformação pessoal através do autoconhecimento profundo. Minha missão é ajudar mulheres a descobrirem seu verdadeiro potencial e viverem uma vida plena e autêntica.",
+  "stats": {
+    "clientsTransformed": 439,
+    "yearsExperience": 5
+  },
+  "specialties": [
+    "Especialista em Padrões Comportamentais",
+    "Terapia Reprocessamento Cognitivo",
+    "Reconhecimento MEC CITRG 16-747",
+    "Psicanalista Clínica SAPDH-2024933"
+  ],
+  "socialLinks": {
+    "instagram": "https://www.instagram.com/jerusalimapsi",
+    "whatsapp": "https://wa.me/message/UDRVCKKC2TURM1",
+    "youtube": "",
+    "telegram": "https://t.me/mariasilva"
+  },
+  "images": {
+    "profile": "/foto_perfil_jerusa.jpg",
+    "hero": "/img_capa_jerusa.png",
+    "mockup": "/mockup_mapa.png"
+  },
+  "videoUrl": "https://www.youtube.com/embed/VIDEO_ID_MARIA",
+  "checkoutUrl": "https://pay.kiwify.com.br/XHo2SsG",
+  "quote": {
+    "text": "A verdadeira transformação acontece quando você se permite conhecer quem realmente é.",
+    "author": "Psi. Jerusa Lima"
+  },
+  "testimonials": [
+    {
+      "name": "Fernanda Costa",
+      "role": "Advogada",
+      "content": "O mapa me ajudou a entender padrões que eu carregava desde a infância. Mudou completamente minha forma de me relacionar!",
+      "rating": 5
+    },
+    {
+      "name": "Juliana Mendes",
+      "role": "Enfermeira",
+      "content": "Incrível como o mapa conseguiu captar aspectos tão profundos da minha personalidade. Recomendo para todas minhas amigas!",
+      "rating": 5
+    },
+    {
+      "name": "Patricia Oliveira",
+      "role": "Professora",
+      "content": "Trabalho fantástico da Jerusa. O mapa me trouxe clareza sobre questões que eu nem sabia que existiam.",
+      "rating": 5
+    }
+  ],
+  "pricing": {
+    "originalPrice": 297,
+    "currentPrice": 47,
+    "currency": "BRL",
+    "guarantee": "Garantia Incontestável",
+    "bonusText": "Bônus exclusivo para as primeiras 5"
+  },
+  "seo": {
+    "title": "Mapa da Personalidade - Jerusa Lima | Terapeuta Holística",
+    "description": "Descubra seus padrões comportamentais com a Terapeuta Jerusa Lima. Análise personalizada que transforma vidas através do autoconhecimento profundo.",
+    "keywords": "mapa personalidade, Jerusa Lima, Psicanálise Clínica, autoconhecimento, leitura comportamental"
+  }
+}

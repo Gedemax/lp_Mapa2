@@ -13,7 +13,7 @@ const FinalCallSection = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
           <div className="relative">
             <img 
-              src={therapistData?.images.hero || "/mapa_img_terapeuta.png"}
+              src={therapistData?.images.profile || "/foto_perfil.jpg"}
               alt={`${therapistData?.name || "Oneida Fernanda"} - Terapeuta`}
               className="w-80 h-80 rounded-full object-cover shadow-2xl border-8 border-white"
             />

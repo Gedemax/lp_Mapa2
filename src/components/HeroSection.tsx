@@ -62,7 +62,7 @@ const HeroSection = () => {
           <div className="lg:col-span-5 mt-12 lg:mt-0">
             <div className="relative">
               <img 
-                src="/mapa_img_terapeuta.png"
+                src={therapistData?.images.hero || "/mapa_img_terapeuta.png"}
                 alt="Mulher confiante olhando no espelho"
                 className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
               />

@@ -10,12 +10,7 @@ const Header = () => {
             <Heart className="h-8 w-8 text-purple-600" />
             <span className="text-xl font-bold text-gray-900">Mapa da Personalidade</span>
           </div>
-          <div className="hidden md:flex items-center space-x-4">
-            <span className="text-sm text-gray-600">🔒 Ambiente 100% Seguro</span>
-            <div className="text-sm text-gray-600">
-              Suporte: <span className="text-purple-600 font-medium">(11) 9999-9999</span>
-            </div>
-          </div>
+          
         </div>
       </div>
     </header>
