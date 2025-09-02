@@ -31,16 +31,29 @@ const HeroSection = () => {
             
             {/* Video */}
             <div className="w-full sm:w-[360px] h-[215px] rounded-lg overflow-hidden border-2 border-purple-200 bg-black flex items-center justify-center mb-4">
-              <iframe
-  width="100%"
-  height="215"
-  src="https://www.youtube.com/embed/wyFXj0edt_c?rel=0&modestbranding=1&autoplay=0&controls=1"
-  title="Vídeo Explicativo"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ pointerEvents: 'auto' }}
-></iframe>
+              {therapistData?.videoUrl ? (
+                <iframe
+                  width="100%"
+                  height="215"
+                  src={`${therapistData.videoUrl}?rel=0&modestbranding=1&autoplay=0&controls=1`}
+                  title="Vídeo Explicativo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ pointerEvents: 'auto' }}
+                />
+              ) : (
+                <iframe
+                  width="100%"
+                  height="215"
+                  src="https://www.youtube.com/embed/wyFXj0edt_c?rel=0&modestbranding=1&autoplay=0&controls=1"
+                  title="Vídeo Explicativo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  style={{ pointerEvents: 'auto' }}
+                />
+              )}
             </div>
             {/* Aviso abaixo do vídeo */}
             <div className="flex items-center space-x-2 text-orange-600 mb-4">

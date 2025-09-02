@@ -83,15 +83,19 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.slug as string;
 
   try {
-    // Importa os dados do terapeuta
-    const therapistData = await import(`../src/data/terapeutas/${slug}.json`);
-
+    // Lê o JSON do terapeuta diretamente do disco (sem cache)
+    const fs = await import('fs');
+    const path = await import('path');
+    const filePath = path.join(process.cwd(), 'src/data/terapeutas', `${slug}.json`);
+    const fileContents = fs.readFileSync(filePath, 'utf-8');
+    const therapistData = JSON.parse(fileContents);
     
     return {
       props: {
-        therapistData: therapistData.default,
+        therapistData,
       },
     };
+
   } catch (error) {
     console.error(`Erro ao carregar dados do terapeuta: ${slug}`, error);
     
