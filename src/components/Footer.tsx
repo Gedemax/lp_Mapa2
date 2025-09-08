@@ -1,7 +1,10 @@
 import React from 'react';
 import { Heart, Lock, Shield, Instagram, MessageCircle, Youtube, Send } from 'lucide-react';
+import { useTherapist } from './TherapistProvider';
 
 const Footer = () => {
+  const { therapistData } = useTherapist();
+  
   return (
     <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -9,38 +12,46 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3">Redes Sociais</h3>
             <div className="flex space-x-4">
-              <a 
-                href="https://instagram.com/mapadapersonalidade" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <Instagram className="h-5 w-5 text-white" />
-              </a>
-              <a 
-                href="https://wa.me/5511999999999" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <MessageCircle className="h-5 w-5 text-white" />
-              </a>
-              <a 
-                href="https://youtube.com/@mapadapersonalidade" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <Youtube className="h-5 w-5 text-white" />
-              </a>
-              <a 
-                href="https://t.me/mapadapersonalidade" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
-              >
-                <Send className="h-5 w-5 text-white" />
-              </a>
+              {therapistData?.socialLinks.instagram && (
+                <a 
+                  href={therapistData.socialLinks.instagram} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                >
+                  <Instagram className="h-5 w-5 text-white" />
+                </a>
+              )}
+              {therapistData?.socialLinks.whatsapp && (
+                <a 
+                  href={therapistData.socialLinks.whatsapp} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                >
+                  <MessageCircle className="h-5 w-5 text-white" />
+                </a>
+              )}
+              {therapistData?.socialLinks.youtube && (
+                <a 
+                  href={therapistData.socialLinks.youtube} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                >
+                  <Youtube className="h-5 w-5 text-white" />
+                </a>
+              )}
+              {therapistData?.socialLinks.telegram && (
+                <a 
+                  href={therapistData.socialLinks.telegram} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform"
+                >
+                  <Send className="h-5 w-5 text-white" />
+                </a>
+              )}
             </div>
           </div>
           

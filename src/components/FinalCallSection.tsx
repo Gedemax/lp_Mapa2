@@ -61,6 +61,12 @@ const FinalCallSection = () => {
             icon={<ArrowRight className="h-5 w-5" />}
             size="large"
             className="bg-coral-500 hover:bg-coral-600 text-white shadow-2xl"
+            onClick={() => {
+              const pricingSection = document.getElementById('pricing');
+              if (pricingSection) {
+                pricingSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
           />
         </div>
         
