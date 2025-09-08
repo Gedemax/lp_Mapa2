@@ -38,6 +38,11 @@ export interface TherapistData {
     description: string;
     keywords: string;
   };
+  tracking?: {
+    facebookPixelId?: string;
+    gtmId?: string;
+    clarityId?: string;
+  };
 }
 
 export interface Testimonial {

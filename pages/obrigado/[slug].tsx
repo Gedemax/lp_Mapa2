@@ -158,7 +158,7 @@ export default function ObrigadoPage({ therapistData }: ObrigadoPageProps) {
                 </div>
                 <div className="bg-white rounded-xl p-4 shadow-lg border border-slate-200">
                   <p className="font-bold text-slate-500 mb-1">Receber Seu Mapa</p>
-                  <p className="text-sm text-slate-600">Em até 5 dias úteis</p>
+                  <p className="text-sm text-slate-600">Em até 12 horas úteis</p>
                 </div>
               </div>
             </div>
